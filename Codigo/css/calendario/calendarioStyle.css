@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: fuente1;
+    src: url(../../font/dialogo/dialogoBatmanJoker/coahb.ttf);
+  }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #005AA7;  
+    background: linear-gradient(to right, #FFFDE4, #005AA7); 
+    background: linear-gradient(to right, #FFFDE4, #005AA7);
+    gap: 50px;
+}
+
+header > h1 {
+    color: black;
+    font-size: 100px;
+    letter-spacing: 40px;
+    margin-top: 40px;
+    font-family: fuente1;
+    text-align: center;
+    margin-left: 70px;
+}
+
+main {
+    height: 500px;
+    width: 600px;
+    border: 3px black solid;
+    background-color: #f2e9e4;
+    border-radius: 50px;
+}
+
+#vista_superior {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+#informacion_ano {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mostrar_mes {
+    width: 100px;
+    text-align: center;
+}
+
+.mes_anterior, .mes_proximo {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.dias_semana {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-content: center;
+    align-items: center;
+    background-color: #bdbbb6;
+    text-align: center;
+}
+
+.dias_mes {
+    height: 350px;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-content: center;
+    align-items: center;
+    background-color: #c9ada7;
+    text-align: center;
+    line-height: 30px;
+}
+
+.dias_finales {
+    opacity: 0.2;
+}
+
+.dia_evento {
+    background-color: greenyellow;
+    border-radius: 50%;
+    color: black;
+}
+
+.dia_semana_evento {
+    background-color: red;
+    border-radius: 50%;
+}
+
+.dia_item {
+    font-size: 30px;
+}
+
+.dia_actual {
+    background-color: red;
+    color: white;
+}
+
+footer {
+    background-color: #000000;
+    text-align: center;
+    color: white;
+    bottom: 0;
+    padding: 3px;
+    position: fixed;
+}

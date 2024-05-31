@@ -1,0 +1,172 @@
+@font-face {
+  font-family: frase;
+  src: url(../../font/dialogo/dialogoBatmanJoker/coahb.ttf);
+}
+
+@font-face {
+  font-family: frase2;
+  src: url(../../font/dialogo/dialogoBatmanJoker/ExcelsiorComicsRegular-xE6m.otf);
+}
+
+body {
+  width: 100%;
+  background: rgb(0, 0, 0);
+  margin: 0 auto;
+}
+
+.container {
+  margin-right: 10%;
+}
+
+main {
+  background-image: url("../../img/dialogo/dialogoBatmanJoker/fondo.jpg");
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(212, 22, 22);
+  background-color: aliceblue;
+  text-shadow: 10px;
+  font-size: 2em;
+  padding: 20px;
+  margin: 20px;
+  margin-bottom: 30px;
+}
+
+.diag1 {
+  display: flex;
+  justify-content: right;
+  flex-direction: row;
+
+}
+
+.bocadillo1 {
+  background-color: rgb(122, 228, 201);
+  position: relative;
+  border-style: solid;
+  border-color: rgb(255, 255, 255);
+  border-width: 2px;
+  margin: 5px;
+  border-radius: 1em;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+  height: 50%;
+
+  &:after {
+    content: "";
+    position: absolute;
+    right: -15px;
+    top: 45%;
+    border-style: solid;
+    border-width: 0 15px 15px 0;
+    border-color: rgb(122, 228, 201) transparent;
+    z-index: 1;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: 43%;
+    border-style: solid;
+    border-width: 0 18px 18px 0;
+    border-color: rgb(228, 220, 235) transparent;
+    z-index: 0;
+  }
+}
+
+#batman {
+  display: flex;
+  box-shadow: 5px 5px 5px 0 rgba(231, 119, 44, 0.486);
+  border-radius: 50%;
+  width: 20%;
+  max-width: 150px;
+  min-width: 75px;
+  height: 20%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+#batman>.left {
+  width: 100%;
+}
+
+.diag2 {
+  display: flex;
+  margin-right: 0;
+}
+
+.bocadillo2 {
+  background-color: rgb(234, 245, 170);
+  border-style: solid;
+  border-color: rgb(117, 117, 145);
+  border-width: 2px;
+  position: relative;
+  margin: 5px;
+  border-radius: 1em;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+  height: 50%;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: -14px;
+    top: 50%;
+    border-style: solid;
+    border-width: 0 0 15px 15px;
+    border-color: rgb(234, 245, 170) transparent;
+    z-index: 1;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: -18px;
+    top: 44%;
+    border-style: solid;
+    border-width: 0 0 20px 18px;
+    border-color: rgb(217, 217, 224) transparent;
+    z-index: 0;
+  }
+}
+
+#joker {
+  display: flex;
+  box-shadow: 5px 5px 5px 0 rgba(255, 254, 255, 0.5);
+  border-radius: 50px;
+  width: 20%;
+  max-width: 150px;
+  min-width: 75px;
+  height: 20%;
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+#joker>.right {
+  width: 100%;
+}
+
+.txtBatman {
+  font-family: frase2;
+  justify-content: center;
+  font-size: 35px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.txtJoker {
+  font-family: frase;
+  justify-content: center;
+  font-size: 30px;
+  text-align: center;
+  color: rgb(37, 36, 37);
+  padding-left: 10px;
+  padding-right: 10px;
+}

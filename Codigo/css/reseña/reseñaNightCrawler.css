@@ -1,0 +1,61 @@
+@font-face{
+    font-family: frase;
+    src : url(../../font/reseña/reseñaNightcrawler/Targa.ttf)
+}
+
+
+body{
+    background-image: url(../../img/reseña/reseñaNightCrawler/nightcrawler-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+header{
+    text-align: center;
+    background-image: radial-gradient( #dd4122, #f4ce15 );
+    color: rgb(255, 255, 255);
+    margin-left: 600px;
+    margin-right: 600px;
+    margin-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    font-family: frase;
+}
+
+.review {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    font-family: frase;
+}
+
+.review-content {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 40px;
+    margin-inline-start: 15px;
+    box-shadow: rgba(255, 255, 255, 0.56) 0px 22px 70px 4px;
+    transition: transform ease 0.5s, box-shadow ease 0.5s;
+}
+
+.review-content:hover {
+    transform: translateY(-30px);
+    box-shadow: 0px 5px 10px 0px #ec8815;
+    background-color: rgb(255, 230, 6);
+}
+
+
+
+p::first-letter{
+    font-size: 200%;
+}

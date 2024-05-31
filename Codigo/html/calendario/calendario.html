@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="../../css/calendario/calendarioStyle.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Calendario</h1>
+    </header>
+    <main>
+        <div id="vista_superior">
+            <div class="mes_anterior" id="anterior">⇐</div>
+            <div id="informacion_ano">
+                <h1 class="mostrar_ano" id="ano"></h1>
+                <h2 class="mostrar_mes" id="mes"></h2>
+            </div>
+            <div class="mes_proximo" id="proximo">⇒</div>
+        </div>
+        <ol class="dias_semana">
+            <li class="dias_semana_item contenido_dia">L</li>
+            <li class="dias_semana_item contenido_dia">M</li>
+            <li class="dias_semana_item contenido_dia">X</li>
+            <li class="dias_semana_item contenido_dia">J</li>
+            <li class="dias_semana_item contenido_dia">V</li>
+            <li class="dias_semana_item contenido_dia">S</li>
+            <li class="dias_semana_item contenido_dia">D</li>
+        </ol>
+        <div class="dias_mes" id="dias_mes"></div>
+    </main>
+    <footer>
+        <p>SumanLamichhane 2024 © sumlam@alu.edu.gva.es</p>
+    </footer>
+</body>
+<script src="../../js/calendario/calendario.js"></script>
+</html>
